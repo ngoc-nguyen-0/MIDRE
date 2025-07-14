@@ -66,10 +66,10 @@
   <span style="font-family: 'Courier New', monospace;">𝓛(θ)</span> is the standard training loss, e.g., cross-entropy.
   Training a model with state-of-the-art MI defenses (SOTA): 
   (b) BiDO [Peng et al., 2022], 
-  (c) NLS [Struppek et al.], 
+  (c) NLS [Struppek et al., 2024], 
   (d) TL-DMI [Ho et al., 2024], 
   (e) MI-RAD [Koh et al., 2024], 
-  and (f) Our method.  Studies in [Peng et al., 2022; Struppek et al.] focus on 
+  and (f) Our method.  Studies in [Peng et al., 2022; Struppek et al., 2024] focus on 
   <strong>adding new loss</strong> to the training objective in order to find a balance between model utility and privacy. Both TL-DMI [Ho et al., 2024] and MI-RAD [Koh et al., 2024] focus on 
   <strong>the model's parameters</strong> to defend against MI. For our proposed method (f), the training procedure and objective are the same as in (a) “No Defense.” 
   However, the training samples presented to the model are partially masked, thus reducing the private training sample's information encoded in the model and 
