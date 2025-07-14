@@ -75,16 +75,35 @@
         <h2 class="display-1" style="text-align:center; font-weight:bold; font-size:1.5em;letter-spacing:2.0px;">Abstract</h2>
         <hr style="border-top: 1px solid #000000; background: transparent;" class="my-4">
             <p class="lead" style="text-align:left;font-size:1.25em;">
-                Model Inversion (MI) attacks pose a significant privacy threat by reconstructing private training data from machine learning models. 
-While existing defenses primarily concentrate on model-centric approaches, the impact of data on MI robustness remains largely unexplored.
-In this work, we explore
-{\em Random Erasing (RE)}—a technique traditionally used for improving model generalization under occlusion—and uncover its surprising effectiveness as a defense against MI attacks.
+  <p>
+  Model Inversion (MI) attacks pose a significant privacy threat by reconstructing private training data from machine learning models. 
+  While existing defenses primarily concentrate on model-centric approaches, the impact of data on MI robustness remains largely unexplored.
+</p>
 
-Specifically, our novel feature space analysis shows that model trained with RE-images introduces a significant discrepancy between the features of MI-reconstructed images and those of the private data. At the same time, features of private images remain distinct from other classes and well-separated from different classification regions. These effects collectively degrade MI reconstruction quality and attack accuracy while maintaining reasonable natural accuracy. Furthermore, we explore two critical properties of RE including Partial Erasure and Random Location. 
-First, {\em Partial Erasure} prevents the model from observing entire objects during training, and we find that this has significant impact on MI, which aims to reconstruct the entire objects. Second, the {\em Random Location} of erasure plays a crucial role in achieving a strong privacy-utility trade-off. 
-Our findings highlight RE as a simple yet effective defense mechanism that can be easily integrated with existing privacy-preserving techniques. Extensive experiments of 37 setups demonstrate that our method achieves SOTA performance in privacy-utility tradeoff. The results consistently demonstrate the superiority of our defense over existing defenses across different MI attacks, network architectures, and attack configurations.
-For the first time, we achieve significant degrade in attack accuracy {\em without} decrease in utility for some configurations.
-            </p>
+<p>
+  In this work, we explore <em>Random Erasing (RE)</em>—a technique traditionally used for improving model generalization under occlusion—and uncover its surprising effectiveness as a defense against MI attacks.
+  Specifically, our novel feature space analysis shows that models trained with RE-images introduce a significant discrepancy between the features of MI-reconstructed images and those of the private data. 
+  At the same time, features of private images remain distinct from other classes and well-separated from different classification regions. 
+  These effects collectively degrade MI reconstruction quality and attack accuracy while maintaining reasonable natural accuracy.
+  Furthermore, we explore two critical properties of RE including <strong>Partial Erasure</strong> and <strong>Random Location</strong>. 
+  <ul>
+  <li>
+    <strong>Partial Erasure</strong> prevents the model from observing entire objects during training. 
+    We find this has a significant impact on MI, which aims to reconstruct the entire objects.
+  </li>
+  <li>
+    <strong>Random Location</strong> of erasure plays a crucial role in achieving a strong privacy-utility trade-off.
+  </li>
+</ul>
+  Our findings highlight RE as a simple yet effective defense mechanism that can be easily integrated with existing privacy-preserving techniques.
+  Extensive experiments across 37 setups demonstrate that our method achieves state-of-the-art (SOTA) performance in the privacy-utility trade-off. 
+  The results consistently demonstrate the superiority of our defense over existing methods across different MI attacks, network architectures, and attack configurations.
+</p>
+
+<p>
+  For the first time, we achieve a significant degradation in attack accuracy <em>without</em> a decrease in utility for some configurations.
+</p>
+</p>
 
     </div>
 
