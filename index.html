@@ -56,30 +56,6 @@
     </div>
 
 
-    <div class="container" style="font-family: 'Times New Roman', serif; font-size: 21px;">
-        <figure>                
-            <div class="col-md-12 text-center">
-                <img src="./figures/MIDRE_2.png" alt="Inverted examples" style="width:100%;height:100%;">
-            </div>
-        
-            <figcaption><p> Figure 1: <strong>Our Proposed Model Inversion (MI) Defense via Random Erasing (MIDRE).</strong>  (a) <em>“No Defense”</em>: Training a model without MI defense. 
-  <span style="font-family: 'Courier New', monospace;">𝓛(θ)</span> is the standard training loss, e.g., cross-entropy.
-  Training a model with state-of-the-art MI defenses (SOTA): 
-  (b) BiDO [Peng et al., 2022], 
-  (c) NLS [Struppek et al., 2024], 
-  (d) TL-DMI [Ho et al., 2024], 
-  (e) MI-RAD [Koh et al., 2024], 
-  and (f) Our method.  Studies in [Peng et al., 2022; Struppek et al., 2024] focus on 
-  <strong>adding new loss</strong> to the training objective in order to find a balance between model utility and privacy. Both TL-DMI [Ho et al., 2024] and MI-RAD [Koh et al., 2024] focus on 
-  <strong>the model's parameters</strong> to defend against MI. For our proposed method (f), the training procedure and objective are the same as in (a) “No Defense.” 
-  However, the training samples presented to the model are partially masked, thus reducing the private training sample's information encoded in the model and 
-  <strong>preventing the model from observing the entire images</strong>. Therefore, <strong>MIDRE is different from other approaches and focuses on input data only to defend.</strong> We find that this can significantly degrade MI attacks, which require a substantial amount of private training data information encoded inside the model in order to reconstruct high-dimensional private images.
-</p>
-            </figcaption>
-        </figure>
-    </div>
-
-    
     <!-- Abstract -->
     <div class="container" style="font-family: 'Times New Roman', serif; font-size: 21px;">
         <h2 class="display-1" style="text-align:center; font-weight:bold; font-size:1.5em;letter-spacing:2.0px;">Abstract</h2>
@@ -106,6 +82,30 @@
 
     </br>
 
+    <div class="container" style="font-family: 'Times New Roman', serif; font-size: 21px;">
+        <figure>                
+            <div class="col-md-12 text-center">
+                <img src="./figures/MIDRE_2.png" alt="Inverted examples" style="width:100%;height:100%;">
+            </div>
+        
+            <figcaption><p> Figure 1: <strong>Our Proposed Model Inversion (MI) Defense via Random Erasing (MIDRE).</strong>  (a) <em>“No Defense”</em>: Training a model without MI defense. 
+  <span style="font-family: 'Courier New', monospace;">𝓛(θ)</span> is the standard training loss, e.g., cross-entropy.
+  Training a model with state-of-the-art MI defenses (SOTA): 
+  (b) BiDO [Peng et al., 2022], 
+  (c) NLS [Struppek et al., 2024], 
+  (d) TL-DMI [Ho et al., 2024], 
+  (e) MI-RAD [Koh et al., 2024], 
+  and (f) Our method.  Studies in [Peng et al., 2022; Struppek et al., 2024] focus on 
+  <strong>adding new loss</strong> to the training objective in order to find a balance between model utility and privacy. Both TL-DMI [Ho et al., 2024] and MI-RAD [Koh et al., 2024] focus on 
+  <strong>the model's parameters</strong> to defend against MI. For our proposed method (f), the training procedure and objective are the same as in (a) “No Defense.” 
+  However, the training samples presented to the model are partially masked, thus reducing the private training sample's information encoded in the model and 
+  <strong>preventing the model from observing the entire images</strong>. Therefore, <strong>MIDRE is different from other approaches and focuses on input data only to defend.</strong> We find that this can significantly degrade MI attacks, which require a substantial amount of private training data information encoded inside the model in order to reconstruct high-dimensional private images.
+</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    
     <!-- Proposed Approach -->
     <div class="container" style="font-family: 'Times New Roman', serif; font-size: 21px;">
         <figure>                
